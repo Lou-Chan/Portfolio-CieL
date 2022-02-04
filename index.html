@@ -12,24 +12,199 @@
 <body>
    <section id="home">
             <header>
-            <a href=""><img src="Logodesign1.png" id="Logodesign1"></a>
+            <a href="#home"><img src="Logodesign1.png" id="Logodesign1"></a>
             <ul id="menu">
                 <li class="button"><a href="#home">Home</a></li>
                 <li class="button active"><a href="#about">About me</a></li>
                 <li class="button"><a href="#work">Work</a></li>
                 <li class="button"><a href="#testimonials">Testimonials</a></li>
-                <li class="button"><a href="#contact">Contact</a></li>             
-                
+                <li class="button"><a href="#contact">Contact</a></li>              
             </ul>
                      
         </header>
         <center><img src="./Images/laptop2-1920.jpg" id="laptop2-1920"></center>
    </section>
-   <section id="about"><h1>ABOUT ME</h1></section> 
-   <section id="work"><h1>WORK</h1></section> 
-   <section id="testimonials"><h1>TESTIMONIALS</h1></section> 
-   <section id="contact"><h1>CONTACT</h1></section>  
 
+   <script>
+        var header = document.getElementById("home");
+    var btns = header.getElementsByClassName("button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+
+   <section id="about"><h1>Things which I do</h1>
+
+  
+  <div class="blockabout">
+    <div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <p1>  <img class="rs" src="Images\Code2.jpg">
+                    <span class="titleabout">HTML</span>
+                                  
+                    <p> fd dhgf f gh fgh fgh fghfgfgh
+                        fghfgh fg hf gh fgh fgh fg hf 
+                        fghf hgf gh fgh fgh fgh fg hf hg
+                        fd dhgf f gh fgh fgh fghfgfgh
+                        fghfgh fg hf gh fgh fgh fg hf 
+                        fghf hgf gh fgh fgh fgh fg hf hg
+                        fd dhgf f gh fgh fgh fghfgfgh
+                        fghfgh fg hf gh fgh fgh fg hf 
+                        fghf hgf gh fgh fgh fgh fg hf hg
+                    </p>
+                                         
+                </p1>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <p1><span class="titleabout">CSS</span>
+                    <img class="rs" src="Images\Code2.jpg">
+                 <p> Dasdf we r t rt y yu tu ty ut yu ty t 
+                    n bv nm b h kh jk hh  hk hjk hjk
+                    sdf we r t rt y yu tu ty ut yu ty t 
+                    n bv nm b h kh jk hh  hk hjk hjk
+                    sdf we r t rt y yu tu ty ut yu ty t 
+                    n bv nm b h kh jk hh  hk hjk hjk
+                    sdf we r t rt y yu tu ty ut yu ty t 
+                    n bv nm b h kh jk hh  hk hjk hjk
+                </p>
+                         
+            </p1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">               
+                <p1><span class="titleabout">JAVASCRIPT</span>
+                    <img class="rs" src="Images\Code2.jpg">
+                 <p> Dasdf we r t rt y yu tu ty ut yu ty t 
+                     n bv nm b h kh jk hh  hk hjk hjk
+                     sdf we r t rt y yu tu ty ut yu ty t 
+                     n bv nm b h kh jk hh  hk hjk hjk
+                     sdf we r t rt y yu tu ty ut yu ty t 
+                     n bv nm b h kh jk hh  hk hjk hjk
+                     sdf we r t rt y yu tu ty ut yu ty t 
+                     n bv nm b h kh jk hh  hk hjk hjk
+                </p>
+                      
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<!-- <div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+               <img class="rs" src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<!-- <div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Centered responsive images as background with centered content over it.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Again
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                And again
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- END OF LAYOUT, following juts for the demo -->
+
+<!-- <div id="bottom">
+    <p>If you want to see this grid only with responsive images, you can check this out:<br/>
+        <a href="http://jsfiddle.net/webtiki/MpXYr/2/"> Responsive 3x3 square image grid </a></p> 
+    <a href="http://stackoverflow.com/users/1811992/web-tiki">web-tiki</a>
+</div> -->
+
+</section> 
+
+   <section id="work"><h1>WORK</h1>
+
+    asdsgdgf d  dfg dfg dfg d gfd fgd fg dfg dfg dg
+
+</section> 
+
+   <section id="testimonials"><h1>TESTIMONIALS</h1></section> 
+  
+  
+   <section id="contact"><h1>LET'S TALK</h1>  
+
+    <div class="blockabout">
+        <div class="square">
+        <div class="content">
+            <div class="table">
+                <div class="table-cell">
+                    <p1>  
+                        <span class="titlecontact">Contact us by using the form</span>
+                                      
+                        <p> fd 
+                            
+                        </p>
+                                             
+                    </p1>
+                </div>
+            </div>
+        </div>
+    </div>
